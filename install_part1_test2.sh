@@ -40,7 +40,7 @@ config_location  = /root/.jupyter/jupyter_lab_config.py
 echo "check out the location of configuration file is $config_location ?Y/n"
 read judge
 case $judge in
-     Y|y) pass;;
+     Y|y) echo "enter the later step" ;;
      N|n)echo "input the correct location:"
             read config_location;;
 esac
