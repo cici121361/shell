@@ -53,7 +53,7 @@ source bin/activate
 
 echo "+++++++++++++++++++++++++"
 echo "Install Jupyter Lab in virtual environment"
-pip3 install jupyterlab -i https://pypi.tuna.tsinghua.edu.cn/simple/ #use the mirror provided by Tsinghua University
+pip3 install jupyterlab  #-i https://pypi.tuna.tsinghua.edu.cn/simple/ #use the mirror provided by Tsinghua University
 jupyter lab --generate-config
 
 #set a password
