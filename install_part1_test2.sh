@@ -47,6 +47,9 @@ esac
 
 #add the needing content into config file
 echo "add the necessary information into configuration file"
+echo "input the str which represents password."
+read password
+echo c.ServerAPP.password=u$password
 echo c.ServerApp.ip='*' >> config_location
 echo c.NotebookApp.open_browser = False >> config_location
 echo c.ServerApp.port =8890 >> config_location
