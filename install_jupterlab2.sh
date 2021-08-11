@@ -17,6 +17,7 @@ case $pyv in
     if [-z $(dpkg -l | grep python3.9)] || [-z $(dpkg -l | grep python3.8)];then
         sudo pip install python3.9
         ln -s /usr/bin/python3.9 /usr/bin/python
+        sudo
         
         
     ;;
