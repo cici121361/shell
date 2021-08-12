@@ -43,8 +43,8 @@ cici
 
 echo "input the str which jupyter output"
 read -r passstr
-while true; do
-    case "$passstr" in
+#while true; do
+#    case "$passstr" in
         
     
 
