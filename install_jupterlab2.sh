@@ -59,13 +59,21 @@ echo $config_inf >> $config_location
 
 
 # deploy nginx
-nginx_path="/usr/local/nginx"
+# nginx_path="/usr/local/nginx"
 
-if ["$(nginx -V)"=~"not found"];then sudo apt install nginx; fi
-sudo add-apt-repository ppa:certbot/certbot
-sudo apt install python-certbot-nginx
-echo "install certbot"
-sudo certbot --nginx
+# if ["$(nginx -V)"=~"not found"];then sudo apt install nginx; fi
+# sudo add-apt-repository ppa:certbot/certbot
+# sudo apt install python-certbot-nginx
+# echo "install certbot"
+# sudo certbot --nginx
+function nginx_install(){
+    if ! command -v nginx >/dev/null 2>&1; then
+      ${INS} nginx
+      judge "Nginx 安装"
+    else 
+      
+
+}
 
 
 
