@@ -1,4 +1,4 @@
-﻿#! /bin/bash
+﻿#!/bin/bash
 
 # Plat:     linux-64
 # Function: install python and jupyterlab and configure nginx in server.
